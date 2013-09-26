@@ -14,6 +14,7 @@ $(document).ready(function(){
           $('#progressBar').removeAttr('hidden');  // show progress bar if there are datas
           var progress = parseInt(data.uploaded, 10)/parseInt(data.length, 10)*100;
           $('#progressBar').attr('value', progress);
+          $('#progressText').text('value', progress);
         }
         else {
           $('#progressBar').attr('hidden', '');  // hide progress bar if no datas
